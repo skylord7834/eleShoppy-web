@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EleShoppy-About Us</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            font-family:'sans-serif','poppins','lucida fax';
+        }
+        .section{
+            width:100%;
+            min-height:100vh;
+            background-color:#4e0379;
+            background:url("img/image34.jpg")no-repeat center center/cover;
+            color:white;
+        }
+
+
+        header {
+            background: var(--main-bg-color);
+            /* opacity:0.5; */
+            background: url('img/image3.jpg')no-repeat center center/cover;
+            font-family: 'Lato', 'lucida-fax';
+            /* position: absolute;
+            z-index: -1; */
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 158px;
+            height: 60px;
+            padding: 0 25px;
+
+        }
+
+        .logo img:hover {
+            cursor: pointer;
+
+        }
+
+        nav ul {
+            height: 58px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 6px;
+            background: transparent;
+            /* padding:5px; */
+
+            /* transition:0.5s; */
+        }
+
+        nav ul li a:hover {
+            /* font-weight: 550; */
+            text-decoration: underline;
+
+            /* background-color:rgb(123, 124, 126); */
+
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 25vw;
+            height: 27px;
+            border: none;
+            border-radius: 10px;
+            margin: 0 16px 0 56px;
+            padding: 0 12px;
+        }
+
+        .btn1{
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .search button:hover {
+            cursor: pointer;
+            background-color: rgb(221, 219, 219);
+
+        }
+
+        .loginPage {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 70px;
+            /* margin-right:20px; */
+        }
+
+        .loginPage a {
+            text-decoration: none;
+            /* font-size:1.2em; */
+            /* border:2px solid; */
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .loginPage a:hover {
+            background-color: rgb(228, 228, 228);
+            font-weight: bold;
+        }
+
+
+
+
+
+        .container{
+            width:80%;
+            display:block;
+            margin:auto;
+            padding-top:100px;
+        }
+        .content-section{
+            float:left;
+            width:55%;
+
+        }
+        .image-section{
+            float:right;
+            width:40%;
+        }
+        .image-section img{
+            width:115%;
+            height:auto;
+            border-radius:10px;
+        }
+        .content-section .title{
+            text-transform:uppercase;
+            font-size:24px;
+
+        }
+        h1{
+            color:rgb(255, 253, 215);
+        }
+        .content-section .content h3{
+            margin-top:20px;
+            color:rgb(221, 240, 240);
+        }
+        .content-section .content p{
+            margin-top:10px;
+            font-family:sans-serif;
+            font-size:14px;
+            line-height:1.5;
+            color:rgb(242, 235, 235);
+        }
+        .content-section .content .button{
+            margin-top:30px;
+        }
+        .content-section .content .button a{
+            background-color:rgb(36, 163, 248);
+            color:rgb(253, 250, 250);
+            padding:10px 30px;
+            text-decoration:none;
+            /* color:#e5e2e9; */
+            font-size:20px;
+            letter-spacing:1.5px;
+            border-radius:10px;
+            transition:0.5s ease;
+            margin-left:60px;
+        }
+        .content-section .content .button a:hover{
+            background-color:rgb(228, 128, 237);
+            color:#fdfbfb;
+
+        }
+        .content-section .social{
+            margin:40px 40px;
+        }
+        .content-section .social i{
+            color:rgb(130, 190, 239);
+            font-size:30px;
+            padding:0px 20px;
+            transition:0.5s ease;
+        }
+        .content-section .social i:hover{
+            color:rgb(235, 99, 221);
+        }
+        summary{
+            cursor:pointer;
+            border:1px solid rgb(132, 129, 129);
+            border-radius:8px;
+            background-color:rgb(11, 82, 120);
+            width:150px;
+            padding:5px;
+            padding-left:15px;
+            margin-top:10px;
+            margin-left:100px;
+            transition:0.5s ease;
+
+        }
+        summary:hover{
+            background-color: rgb(4, 138, 156);
+        }
+        details>ul>li{
+            margin-left:150px;
+            padding-top:6px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar" id="navBar">
+            <div class="logo"><img src="img/eleshoppy.png" alt="Eleshoppy logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search Here">
+                <button class="btn1">Search</button>
+            </div>
+            <div class="loginPage"><a href="loginPage.html">Address</a></div>
+
+        </nav>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="team">
+                    
+                </div>
+                <div class="content">
+                    <h3>Meet Our Teamwork. That makes us Different.</h3>
+                    <p class="para">This website is created in August 2023, in Cuttack,
+                         as a trusted community market place for people explore , discover,
+                          and purchase unique Products around the country- online or from a mobile phone
+                            or tablet. <br>Whether an apartment for a night, a castle for a week, or a villa
+                             for a month,<b> EleShoppy</b> provides experiences of buy accessories and
+                              products at lowest pricepoints in this city.</p>
+                        <!-- <div class="button"><a href="">Read More...</a></div> -->
+                        <details>
+                            <summary>Our Team</summary>
+                           <ul>
+                            <li>Mr. Satyajit Patra (BCA)</li>
+                            <li>Mr. Bhanu Pratap Behura (BCA)</li>
+                            <li>Mr. Sitesh Kumar Nayak (BCA)</li>
+                            <li>Mr. Ashrumochan sahoo (ITM)</li>
+                           </ul>
+                        </details>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/" ><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/?lang=en-in" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/?yt=
+                    " ><i class="fab fa-google"></i></a>
+
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="img/programmer image.jfif" alt="can't load image!">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

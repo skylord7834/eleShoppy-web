@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EleShoppy-Contact Us </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> -->
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            color:rgb(255, 253, 253);
+
+        }
+
+
+        
+        header {
+            background: var(--main-bg-color);
+            /* opacity:0.5; */
+            background: url('img/image3.jpg')no-repeat center center/cover;
+            font-family: 'Lato', 'lucida-fax';
+            /* position: absolute;
+            z-index: -1; */
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 158px;
+            height: 60px;
+            padding: 0 25px;
+
+        }
+
+        .logo img:hover {
+            cursor: pointer;
+
+        }
+
+        nav ul {
+            height: 58px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 6px;
+            background: transparent;
+            /* padding:5px; */
+
+            /* transition:0.5s; */
+        }
+
+        nav ul li a:hover {
+            /* font-weight: 550; */
+            text-decoration: underline;
+
+            /* background-color:rgb(123, 124, 126); */
+
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 25vw;
+            height: 27px;
+            border: none;
+            border-radius: 10px;
+            margin: 0 16px 0 56px;
+            padding: 0 12px;
+        }
+
+        .btn1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .search button:hover {
+            cursor: pointer;
+            background-color: rgb(173, 166, 166);
+            /* font-weight:bold; */
+
+        }
+
+        .loginPage {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 70px;
+            /* margin-right:20px; */
+        }
+
+        .loginPage a {
+            text-decoration: none;
+            /* font-size:1.2em; */
+            /* border:2px solid; */
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .loginPage a:hover {
+            background-color: rgb(228, 228, 228);
+            font-weight: bold;
+        }
+        
+        
+        
+        
+        
+        .contact{
+            position:relative;
+            min-height:100vh;
+            padding:25px 100px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            /* background-color:black; */
+            background:url("img/image34.jpg")no-repeat center center/cover;;
+            /* background-size:cover; */
+
+        }
+        .contact .content{
+            max-width:800px;
+            text-align:center;
+        }
+        .contact .content h2{
+            font-size:36px;
+            margin-top:0px;
+            padding-bottom:15px;
+            /* color:; */
+
+
+        }
+        .contact .content p{
+            font-weight:300;
+            /* color:; */
+            line-height:25px;
+        }
+        .container{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:30px;
+        }
+        .container .contactInfo{
+            width:50%;
+            display:flex;
+            flex-direction:column;
+
+        }
+        .container .contactInfo .box{
+            position:relative;
+            padding:20px 0;
+            display:flex;
+        }
+        .container .contactInfo .box .icon{
+            min-width:30px;
+            height:60px;
+            /* background:#fff; */
+            display:flex;
+            /* justify-content:center; */
+            /* align-items:center; */
+            font-size:20px;
+        }
+        .container .contactInfo .box .text{
+            display:flex;
+            margin-left:10px;
+            font-size:16px;
+            flex-direction:column;
+            font-weight:300;
+            /* border-bottom:2px solid gray; */
+
+        }
+        .container .contactInfo .box .text h3{
+            font-weight:500;
+            color:#00bcd4;
+        }
+        .contactForm{
+            width:40%;
+            padding:40px;
+            background:rgb(237, 230, 230);
+            border-radius:15px;
+        }
+        .contactForm h2{
+            font-size:25px;
+            color:#060606;
+            /* font-weight:500; */
+        }
+        .contactForm .inputBox{
+            position:relative;
+            width:100%;
+            margin-top:10px;
+            /* padding:5px; */
+        }
+        .contactForm .inputBox input{
+            width:100%;
+            padding:5px 0;
+            margin:20px 0;
+            border:none;
+            border-bottom: 2px solid rgb(77, 75, 75);
+            border-radius:5px;
+            /* background-color:rgb(91, 91, 91); */
+            color:black;
+        }
+        .contactForm .inputBox input:focus~span {
+            color:red;
+            font-size:12px;
+            transform:translate(-20px);
+        }
+        .contactForm .inputBox textarea:focus~span{
+            color:red;
+            font-size:12px;
+            transform:translate(-20px);
+        }
+        textarea{
+            border:none;
+            border-bottom:2px solid rgb(77, 75, 75);
+            border-radius:5px;
+            width:100%;
+            height:50px;
+            margin-top: 20px;
+           
+        }
+        span{
+            color:black;
+            position :absolute;
+            left:0;
+            margin-bottom:10px;
+            pointer-events: none;
+            transition:0.5s;
+
+        }
+        .btn{
+            width:100px;
+            color:black;
+            margin-top:20px;
+            margin-left:20px;
+            padding:7px;
+            /* font-size:16px; */
+            border-radius:7px;
+            border:none;
+            background-color:rgb(173, 169, 169);
+            cursor:pointer;
+
+        }
+        .btn:hover{
+            background-color:rgb(126, 120, 120);
+            font-weight:bold;
+        }
+        .extra{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            width:80%;
+            margin-top:100px;
+
+        }
+        .extraContainer{
+            display:flex;
+            width:200px;
+            height:100px;
+            border:2px solid gray;
+            background-color:rgb(21, 21, 21);
+            border-radius:8px;
+            align-items: center;
+            justify-content:center;
+        }
+      
+        
+        .extraContainer a{
+            text-decoration:none;
+            font-size:20px;
+        }
+        /* .extraContainer :hover{
+                background-color:rgb(74, 72, 72)} */
+        .social{
+            margin-top:30px;
+            /* display:flex; */
+        }
+        .social h2{
+            text-align:center;
+        }
+        .social img{
+            height:50px;
+            margin:20px;
+        }
+
+        /* header search button */
+        .btn1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navBar" id="navBar">
+            <div class="logo"><img src="img/eleshoppy.png" alt="Eleshoppy logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search Here">
+                <button class=" btn1">Search</button>
+            </div>
+            <div class="loginPage"><a href="loginPage.html">Address</a></div>
+
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>We'd love to see you how we can get more lead and productivity, and how should we increase our customer service or all the things we need to improve. So feel free to give your feedback to us, that'd be very useful to us. <br>Here are the few ways by which you can stay connected to us. </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" area-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address:</h3>
+                        <p>Salipur, Cuttak<br>CC road Kulia<br>Nabapravat Academy for management education.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" area-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>phone:</h3>
+                        <p>7749962636,9334279395</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" area-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>email:</h3>
+                        <p>eleshoppysupport@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="contact.php" method="post">
+                    <h2>Send Feedback</h2>
+                    <div class="inputBox">
+                        <input type="text" name="fullname" required placeholder="Enter full name">
+                        <span>Full name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required placeholder="Enter email">
+                        <span>email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea type="text" name="feedback" required placeholder="Write Feedback"></textarea>
+                        <span> Feedback</span>
+                    </div>
+                    <div class="inputBox">
+                        <!-- <input type="submit" name="" value="Send" required placeholder="Send"> -->
+                        <!-- <button class="btn">Send</button> -->
+                        <input type="submit" value="Send" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="extra">
+            <div class="extraContainer"><a href="">Order related</a></div>
+            <div class="extraContainer"><a href="">Account related</a></div>
+            <div class="extraContainer"><a href="">Raise a query</a></div>
+        </div>
+        <div class="social">
+            <h2>Connect with us</h2>
+            <a href="https://www.facebook.com/" ><img src="img/fblogo.png"></a>
+            <a href="https://www.instagram.com/?hl=en" ><img src="img/iglogo.png"></a>
+            <a href="https://www.youtube.com/?yt=" ><img src="img/ytlogo.png" alt=""></a>
+        </div>
+    </section>
+    <div class="footer" style="background-color:black" ; align="center" >
+        <p>&copy; copyright 2023 to eleshoppy.com | All rights reserved!</p>
+    </div>
+    
+</body>
+</html>

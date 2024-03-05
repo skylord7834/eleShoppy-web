@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EleShoppy online shopping website</title>
+    <style>
+        :root {
+            /* --main-bg-color: #ff004f; */
+            --main-bg-color: #000000;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* background-color:rgb(249, 250, 223); */
+            /* background:url('img/image3.jpg')no-repeat center center/cover; */
+            color: white;
+            background: black;
+            /* cursor:url('img/cursor.png'),auto; */
+        }
+
+        header {
+            background: var(--main-bg-color);
+            /* opacity:0.5; */
+            background: url('img/image3.jpg')no-repeat center center/cover;
+            font-family: 'Lato', 'lucida-fax';
+            /* position: absolute;
+            z-index: -1; */
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 148px;
+            height: 60px;
+            padding: 0 25px;
+
+        }
+
+        .logo img:hover {
+            cursor: pointer;
+
+        }
+
+        nav ul {
+            height: 58px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 6px;
+            background: transparent;
+            /* padding:5px; */
+
+            /* transition:0.5s; */
+        }
+
+        nav ul li a:hover {
+            /* font-weight: 550; */
+            text-decoration: underline;
+
+            /* background-color:rgb(123, 124, 126); */
+
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 25vw;
+            height: 27px;
+            border: none;
+            border-radius: 10px;
+            margin: 0 16px 0 56px;
+            padding: 0 12px;
+        }
+
+        .search button {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .search button:hover {
+            cursor: pointer;
+            background-color: rgb(221, 219, 219);
+
+        }
+
+        .loginPage {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 70px;
+            /* margin-right:20px; */
+        }
+
+        .loginPage a {
+            text-decoration: none;
+            /* font-size:1.2em; */
+            /* border:2px solid; */
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .loginPage a:hover {
+            background-color: rgb(228, 228, 228);
+            font-weight: bold;
+        }
+
+        .container {
+            background: url('img/image34.jpg') no-repeat center center/cover;
+            height: 100vh;
+            opacity: 0.9;
+            /* z-index: -1; */
+
+
+
+
+
+        }
+
+        marquee {
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+            margin-top: 160px;
+            flex-direction: column;
+            /* line-height: 50px; */
+            
+        }
+
+        .box1 {
+            /* border:2px solid white; */
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+        }
+
+        .bigText {
+            font-size: 2rem;
+        }
+
+        .title {
+            font-size: 3.4rem;
+            font-weight: bold;
+        }
+
+
+
+        /* .box2 {
+       
+        } */
+
+        .para{
+            font-size:1.2rem;
+            line-height: 30px;;
+        }
+        
+
+
+        .startShopping{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loginBtn{
+            margin:10px;
+            /* margin-top:3%; */
+            padding: 10px 15px 10px 15px;
+            font-size: 1.4rem;
+            background-color: rgb(0, 119, 146);
+            font-weight: 500;
+            color: rgb(255, 253, 253);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        .loginBtn:hover{
+            background-color: rgb(11, 165, 165);
+        
+        }
+        .shoppingBtn {
+            margin:10px;
+            /* margin-top: 3%; */
+            padding: 10px 15px 10px 15px;
+            font-size: 1.4rem;
+            background-color: rgb(0, 119, 146);
+            font-weight: 500;
+            color: rgb(255, 253, 253);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .shoppingBtn:hover {
+            background-color: rgb(11, 165, 165);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar" id="navBar">
+            <div class="logo"><img src="img/eleshoppy.png" alt="Eleshoppy logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+            <div class="loginPage"><a href="loginPage.html">Address</a></div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="movingText">
+            <marquee behavior="" direction="">Welcome to our online shop. &ensp; This website is under
+                development.&emsp;There are limited products.</marquee>
+        </div>
+        <div class="content">
+            <div class="box1">
+                <div class="bigText">WELCOME TO </div>
+                <div class="title">EleShoppy-Online Shopping</div>
+                <div class="para">SMARTPHONES | SOUND | GAMING |DESKTOP | CAMERA | MONITORS | POWERBANKS |
+                    WASHINGMACHINES</div>
+            </div>
+            <div class="box2">
+                <!-- <div class="category">SMARTPHONE</div>
+                <div class="category">SOUND</div>
+                <div class="category">GAMING</div>
+                <div class="category">DESKTOP</div>
+                <div class="category">CAMERA</div>
+                <div class="category">MONITOR</div>
+                <div class="category">POWERBANKS </div>
+                <div class="category">W. MACHINE</div> -->
+            </div>
+            <div class="startShopping">
+                <a href="login.html">
+                    <button class ='loginBtn'>Log in</button>
+                </a>
+                <a href="ytproject1/mainpage.html">
+                    <button class="shoppingBtn">
+                        Start Shopping
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
